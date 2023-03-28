@@ -1,0 +1,17 @@
+{% extends 'pages/layout/base.html' %}
+
+{% block title %}
+PointingPoker - Django Channels
+{% endblock %}
+
+{% block content %}
+<h1>
+    Django Channels PointingPoker
+</h1>
+
+<form action="." method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Iniciar</button>
+</form>
+{% endblock %}
