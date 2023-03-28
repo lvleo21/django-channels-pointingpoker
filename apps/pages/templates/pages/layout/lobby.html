@@ -11,7 +11,9 @@ PointingPoker - Django Channels
 
 <form action="." method="post">
     {% csrf_token %}
+    
     {{form.as_p}}
-    <button type="submit">Iniciar</button>
+    
+    <button class="btn btn-primary" type="submit">Iniciar</button>
 </form>
 {% endblock %}
